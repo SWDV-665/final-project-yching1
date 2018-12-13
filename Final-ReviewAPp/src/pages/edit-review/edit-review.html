@@ -1,0 +1,45 @@
+<!--
+  Generated template for the EditReviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
+  Tips from: https://ionicdon.com/how-to-edit-and-delete-displayed-data-from-mysql-database-in-ionic-app/
+  
+-->
+<!--  edit-review --><ion-header>
+  <ion-toolbar transparent>
+    <ion-title>Edit Review</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+   </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+   
+    <ion-list no-lines>
+   
+      <ion-item>
+        <ion-label floating>Title</ion-label>
+        <ion-input id="newTitle" name="newTitle" #newTitle [(ngModel)]="title" type="text"></ion-input>
+      </ion-item>
+   
+      <ion-item>
+        <ion-label floating>Review</ion-label>
+        <ion-textarea [(ngModel)]="description"></ion-textarea>
+      </ion-item>
+   
+      <ion-item>
+        <ion-range min="0" max="100" pin="true" [(ngModel)]="rating">
+          <ion-icon range-left name="sad"></ion-icon>
+          <ion-icon range-right name="happy"></ion-icon>
+        </ion-range>
+      </ion-item>
+   
+    </ion-list>
+   
+    <button ion-button full color="calm" (click)="save()">Save</button>
+   
+  </ion-content>
