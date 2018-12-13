@@ -1,0 +1,26 @@
+{
+  "lockfileVersion": 1,
+  "name": "review-king",
+  "version": "0.1.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@ionic/app-scripts": "^3.2.0",
+    "ajv": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "del": "^3.0.0",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.1.9",
+    "mongoose": "^5.3.12",
+    "morgan": "^1.9.1"
+  }
+}
